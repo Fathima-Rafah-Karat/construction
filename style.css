@@ -924,6 +924,7 @@ footer p {
     .butn1 {
         display: flex;
         margin: 0px;
+        margin-bottom: 12px;
     }
 
     .nav-links {
