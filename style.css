@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
 
@@ -56,7 +57,8 @@ header img {
     justify-content: space-between;
     gap: 67px;
     align-items: center;
-    padding-right: 150px;
+    /* padding-right: 150px; */
+    padding-top: 19. 5px;
     margin: 0px;
     
 
@@ -100,13 +102,16 @@ header button {
 
 
 }
-
+.butn1{
+    display: none;
+    margin: 0px;
+}
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 296px;
+    padding-top: 105px;
 }
 
 .container h1 {
@@ -114,6 +119,7 @@ header button {
     font-size: 50px;
     margin: 0px;
     color: #FFFFFF;
+ 
 }
 
 .container p {
@@ -143,12 +149,14 @@ header button {
     padding-left: 105px;
     padding-right: 128px;
     padding-bottom: 119px;
+    /* width: 100%; */
 }
 
 .mainset img {
-    width: 567px;
+    /* width: 567px; */
     height: 368px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .about {
@@ -158,6 +166,7 @@ header button {
     align-items: flex-start;
     padding-left: 89px;
     gap: 14px;
+    width: 100%;
 
 
 
@@ -214,10 +223,17 @@ header button {
 
 .dulip2 {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 45px;
     padding-bottom: 102px;
     padding-left: 105px;
     padding-right: 75px;
+    width: 100%;
+  
+    
+    
+    
+  
 
 }
 
@@ -229,6 +245,11 @@ header button {
     gap: 12px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    
+
+   
+     
+    
 }
 
 .column img {
@@ -252,7 +273,8 @@ header button {
     text-align: center;
     margin: 0px;
 
-    max-width: 352px;
+    /* max-width: 60%; */
+    max-width: fit-content;
 
 
 
@@ -291,6 +313,7 @@ header button {
 img {
     width: 197px;
     height: 77px;
+    
 
 
 }
@@ -313,6 +336,7 @@ img {
     padding-left: 105px;
     padding-right: 103px;
     width: 100%;
+    gap: 75px;
 }
 
 .left-section {
@@ -344,7 +368,7 @@ img {
 }
 
 .input1 input {
-    width: 525px;
+    width: 100%;
     border-radius: 10px;
     padding: 10px;
     border: #EFF5F9;
@@ -363,7 +387,7 @@ img {
 }
 
 .input2 input {
-    width: 525px;
+    width: 100%;
     padding: 10;
     border-radius: 10px;
     padding: 10px;
@@ -384,7 +408,7 @@ img {
 }
 
 textarea {
-    width: 525px;
+    width: 100%;
     border-color: #FFFFFF;
     border-radius: 10px;
 }
@@ -415,6 +439,7 @@ button {
     padding-left: 105px;
     padding-top: 85px;
     padding-bottom: 95px;
+     padding-right: 135px; 
 }
 
 
@@ -498,7 +523,7 @@ button {
     color: #1A1A1A;
     margin: 0px;
     padding-top: 8px;
-    padding-right: 135px;
+    /* padding-right: 135px; */
 
 }
 
@@ -618,8 +643,17 @@ footer p {
         gap: 18px;
     }
 
-    header button {
+    .btn2 {
+       display: none;
+       justify-content: center;
+       margin: 0px;
+    }
+    .butn1 {
+        display: flex;
         margin: 0px;
+    }
+    header button{
+         margin:0;
     }
 
     .nav-links {
@@ -631,7 +665,7 @@ footer p {
         top: 100px;
         left: 0;
         right: 0;
-        padding: 20px;
+        /* padding: 20px; */
         justify-content: center;
         z-index: 10;
         align-items: center;
@@ -671,11 +705,12 @@ footer p {
         padding-left: 5px;
         padding-right: 5px;
     }
+   
 
-    .image {
+    /* .image {
         flex-wrap: wrap;
 
-    }
+    } */
 
     .container3 {
         flex-direction: row;
@@ -692,6 +727,18 @@ footer p {
     .last {
         flex-direction: column;
         gap: 20px;
+        align-items: center;
+        
+    }
+    .col2{
+        align-items: center;
+    }
+    
+    .col3 {
+        align-items: center;
+    }
+    .col3 p{
+       
     }
 }
 
@@ -701,10 +748,11 @@ footer p {
         gap: 18px;
 
     }
-
+/* 
     header button {
         margin: 0px;
-    }
+    } */
+    
 
     .nav-links {
         display: none;
@@ -715,7 +763,7 @@ footer p {
         top: 100px;
         left: 0;
         right: 0;
-        padding: 15px;
+        /* padding: 15px; */
         justify-content: center;
         z-index: 8;
         align-items: center;
@@ -755,18 +803,39 @@ footer p {
     .dulip2 {
         gap: 17px;
     }
-
-    .image {
-        flex-wrap: wrap;
+    .column p{
+        max-width: fit-content;
     }
 
+    /* .image  {
+        flex-wrap: wrap;
+       
+    } */
+     .scroll{
+        overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+     }
+     .image{
+        display: inline-flex;
+      animation: scroll 20s linear infinite;
+     }
+     @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+
+      }
+    }
     .container3 {
         flex-direction: row;
     }
 
     .clients {
-        padding-left: 105px;
-        padding-right: 105px;
+        /* padding-left: 105px;
+        padding-right: 105px; */
     }
 
     .left-section {
@@ -797,6 +866,9 @@ footer p {
 }
 
 @media (max-width:768px) {
+    .column p{
+        max-width: fit-content;
+    }
     .container3 {
         flex-direction: column;
 
@@ -841,7 +913,11 @@ footer p {
 
     }
 
-    header button {
+  .btn2 {
+       display: none;
+    }
+    .butn1 {
+        display: flex;
         margin: 0px;
     }
 
@@ -854,7 +930,7 @@ footer p {
         top: 100px;
         left: 0;
         right: 0;
-        padding: 15px;
+        /* padding: 15px; */
         justify-content: center;
         z-index: 8;
         align-items: center;
@@ -915,12 +991,16 @@ footer p {
         padding-left: 20px;
         padding-right: 20px;
     }
+   
 
-
-    .image {
+    .image img  {
         justify-content: center;
-        flex-wrap: wrap;
-        padding: 0px;
+        /* flex-wrap: wrap; */
+        /* padding: 0px; */
+      
+        /* overflow:auto;
+        flex-shrink: 0;
+        scroll-behavior: smooth; */
     }
 
     /* .clients {
@@ -930,6 +1010,7 @@ footer p {
     .container3 {
         flex-direction: column;
         padding-left: 20px;
+        padding-right: 20px;
 
 
     }
@@ -962,17 +1043,23 @@ footer p {
 
 
     }
+   
 
     .last {
         flex-direction: column;
         gap: 25px;
         padding-left: 20px;
+        justify-content: center;
+        align-content: center;
+        
     }
+  
 
     footer {
         font-size: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        justify-content: center;
 
     }
 }
