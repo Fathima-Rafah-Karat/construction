@@ -737,13 +737,15 @@ footer p {
     .col2{
         align-items: center;
     }
-    
+    .col2 p{
+        text-align: center;
+    }
     
     .col3 {
         align-items: center;
     }
     .col3 p{
-       
+       text-align: center;
     }
 }
 
@@ -772,6 +774,7 @@ footer p {
         justify-content: center;
         z-index: 8;
         align-items: center;
+       
     }
 
     .nav-links.active {
@@ -780,6 +783,8 @@ footer p {
 
     .hamburger {
         display: block;
+        
+        
     }
 
     .container button {
@@ -1056,7 +1061,7 @@ footer p {
         gap: 25px;
         padding-left: 20px;
         justify-content: center;
-        align-content: center;
+        align-items: center;
         
     }
   
@@ -1066,6 +1071,7 @@ footer p {
         padding-left: 20px;
         padding-right: 20px;
         justify-content: center;
+        align-items: center;
 
     }
 }
