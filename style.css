@@ -1060,6 +1060,7 @@ footer p {
         flex-direction: column;
         gap: 25px;
         padding-left: 20px;
+        padding-right: 20px;
         justify-content: center;
         align-items: center;
         
@@ -1070,7 +1071,7 @@ footer p {
         font-size: 10px;
         padding-left: 20px;
         padding-right: 20px;
-     
+        justify-content: center;
 
     }
 }
